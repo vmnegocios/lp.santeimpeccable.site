@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+	
+	<link rel="preload" href="https://scripts.converteai.net/7ee76c7b-b701-481f-b973-2b478faae041/players/67a40b752edad2a956493aed/player.js" as="script">
+	<link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
+	<link rel="preload" href="https://images.converteai.net/7ee76c7b-b701-481f-b973-2b478faae041/players/67a40b752edad2a956493aed/thumbnail.jpg" as="image">
+	<link rel="preload" href="https://cdn.converteai.net/7ee76c7b-b701-481f-b973-2b478faae041/67a409ce97bcbcd9cefc7dcf/main.m3u8" as="fetch">
+	<link rel="dns-prefetch" href="https://cdn.converteai.net">
+	<link rel="dns-prefetch" href="https://scripts.converteai.net">
+	<link rel="dns-prefetch" href="https://images.converteai.net">
+	<link rel="dns-prefetch" href="https://api.vturb.com.br">
+	
+	<script>
+	  window.pixelId = "67a420e24e4bd22cfa7a4b03";
+	  var a = document.createElement("script");
+	  a.setAttribute("async", "");
+	  a.setAttribute("defer", "");
+	  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+	  document.head.appendChild(a);
+	</script>
+
+	<script
+	  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+	  async
+	  defer
+	></script>
+	
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        function getCurrentDate() {
+            const today = new Date();
+            const day = String(today.getDate()).padStart(2, '0');
+            const month = String(today.getMonth() + 1).padStart(2, '0');
+            const year = today.getFullYear();
+            return `${day}/${month}/${year}`;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('dynamic-date').textContent = getCurrentDate();
+        });
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+
+        .top-bar {
+            background-color: #ff0000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .video-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .sound-notice {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            font-size: 16px;
+            margin-bottom: 40px;
+			color: white;
+        }
+        .sound-notice i {
+            margin-right: 10px;
+			color: white;
+        }
+
+        .comments-container {
+            max-width: 800px;
+            margin: 30px auto;
+            background-color: #F9FAFB;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .comments-header {
+            font-size: 14px;
+            color: #6C757D;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .comment {
+            display: flex;
+            align-items: flex-start;
+            padding: 15px 0;
+            border-bottom: 1px solid #E5E7EB;
+        }
+
+        .comment:last-child {
+            border-bottom: none;
+        }
+
+        .comment img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        .comment-content {
+            flex: 1;
+        }
+
+        .comment-header {
+            font-weight: 600;
+            font-size: 14px;
+            color: #3A559F;
+            margin-bottom: 5px;
+        }
+
+        .comment-text {
+            font-size: 14px;
+            color: #6C757D;
+            margin-bottom: 10px;
+        }
+
+        .nested-comments {
+            border-left: 2px solid #E5E7EB;
+            padding-left: 10px;
+        }
+        
+        .loading-icon {
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .load-more-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        #loadMoreBtn {
+            background-color: #3A559F;
+            color: white;
+            font-weight: 600;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+
+        #loadMoreBtn:hover {
+            background-color: #2d4373;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        Cette présentation sera disponible uniquement jusqu'au <span id="dynamic-date" class="underline-highlight"></span>
+    </div>
+
+    <div class="video-section">
+        <div id="vid_67a40b752edad2a956493aed" style="position: relative; width: 100%; padding: 177.77777777777777% 0 0;"> <img id="thumb_67a40b752edad2a956493aed" src="https://images.converteai.net/7ee76c7b-b701-481f-b973-2b478faae041/players/67a40b752edad2a956493aed/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> <div id="backdrop_67a40b752edad2a956493aed" style=" -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%; "></div> </div> <script type="text/javascript" id="scr_67a40b752edad2a956493aed"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/7ee76c7b-b701-481f-b973-2b478faae041/players/67a40b752edad2a956493aed/player.js", s.async=!0,document.head.appendChild(s); </script>
+    </div>
+
+    <div class="sound-notice">
+        <i class="bi bi-volume-up-fill"></i>
+        Assurez-vous que votre son est activé
+    </div>
+
+    <div class="comments-container">
+        <div class="comments-header">8 sur 1143 commentaires</div>
+		
+        <div class="comment">
+            <img src="images/user1.webp" alt="Lucas Dubois">
+            <div class="comment-content">
+                <div class="comment-header">Lucas Dubois</div>
+                <div class="comment-text">J’ai essayé plusieurs techniques et méthodes sur le marché, et je peux garantir qu’il n’existe rien de comparable. Merci, Joseph, de m’avoir montré le chemin vers une amélioration naturelle et une confiance retrouvée après 50 ans 🙌</div>
+            </div>
+        </div>
+        
+        <div class="comment">
+            <img src="images/user2.webp" alt="Camille Rousseau">
+            <div class="comment-content">
+                <div class="comment-header">Camille Rousseau</div>
+                <div class="comment-text">Je jurais que ce serait encore une de ces vidéos longues et ennuyeuses… Félicitations pour avoir partagé du contenu authentique! Mon mari utilise cette méthode depuis une semaine et la différence est visible, je suis impressionnée et ravie</div>
+                <div class="nested-comments">
+                    <div class="comment">
+                        <img src="images/user3.webp" alt="Antoine Lefebvre">
+                        <div class="comment-content">
+                            <div class="comment-header">Antoine Lefebvre</div>
+                            <div class="comment-text">Je pensais la même chose, mais Joseph est incroyable!! J’ai testé l’astuce hier et en moins d’une semaine, on voit déjà la différence. Ma femme et moi avons passé la nuit entière à en profiter!</div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img src="images/user2.webp" alt="Camille Rousseau">
+                        <div class="comment-content">
+                            <div class="comment-header">Camille Rousseau</div>
+                            <div class="comment-text">Exactement ! On fait pareil ici hehe 😏</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="comment">
+            <img src="images/user4.webp" alt="Hugo Moreau">
+            <div class="comment-content">
+                <div class="comment-header">Hugo Moreau</div>
+                <div class="comment-text">Quelqu’un a déjà essayé ça?</div>
+                <div class="nested-comments">
+                    <div class="comment">
+                        <img src="images/user5.webp" alt="Sophie Laurent">
+                        <div class="comment-content">
+                            <div class="comment-header">Sophie Laurent</div>
+                            <div class="comment-text">Je vais faire en sorte que mon mari continue chaque matin! Je ne savais même pas que je pouvais ressentir autant de plaisir. Ce truc a changé ma vie, MERCI JOSEPH, TU ES INCROYABLE</div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img src="images/user6.webp" alt="Élodie Bertrand">
+                        <div class="comment-content">
+                            <div class="comment-header">Élodie Bertrand</div>
+                            <div class="comment-text">Enfin quelqu’un me comprend! Je n’avais jamais eu d’orgasme de toute ma vie, mais depuis que Jason suit ces étapes, il me fait jouir tous les jours… Mes jambes tremblent en ce moment même… j’adore ça ! 😳🔥</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment">
+            <img src="images/user7.webp" alt="Théo Durand">
+            <div class="comment-content">
+                <div class="comment-header">Théo Durand</div>
+                <div class="comment-text">Adieu la chirurgie ! Enfin une solution naturelle qui fonctionne réellement. Je l’ai testé et je recommande fortement. En plus, c’est super facile à faire et les résultats sont immédiats. Joseph, tu es le meilleur, que Dieu te bénisse!</div>
+            </div>
+        </div>
+		
+        <div class="load-more-container">
+            <button id="loadMoreBtn">
+                Charger plus de commentaires
+            </button>
+        </div>
+
+    </div>
+    
+    <script>
+        const loadMoreBtn = document.getElementById('loadMoreBtn');
+        loadMoreBtn.addEventListener('click', () => {
+            loadMoreBtn.innerHTML = '<i class="fas fa-circle-notch fa-spin" style="margin-right: 8px;"></i>Chargement...';
+        });
+    </script>
+</body>
+</html>
