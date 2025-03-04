@@ -3,6 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Page Spéciale</title>
+  
+	<script
+	src="https://vm-business.mycartpanda.com/js/libs/ocu-external.js">
+	</script>
+
+	<script>
+	new OcuExternal();
+	</script>
+	
+	<link rel="preload" href="https://scripts.converteai.net/7ee76c7b-b701-481f-b973-2b478faae041/players/67c37a87c8f32f34895efd2d/player.js" as="script">
+	<link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
+	<link rel="preload" href="https://images.converteai.net/7ee76c7b-b701-481f-b973-2b478faae041/players/67c37a87c8f32f34895efd2d/thumbnail.jpg" as="image">
+	<link rel="preload" href="https://cdn.converteai.net/7ee76c7b-b701-481f-b973-2b478faae041/67c37a52d17ed36f39954d40/main.m3u8" as="fetch">
+	<link rel="dns-prefetch" href="https://cdn.converteai.net">
+	<link rel="dns-prefetch" href="https://scripts.converteai.net">
+	<link rel="dns-prefetch" href="https://images.converteai.net">
+	<link rel="dns-prefetch" href="https://api.vturb.com.br">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
   <style>
@@ -115,10 +133,14 @@
       padding: 20px 10px;
     }
   </style>
+  <!-- Estilo para esconder os elementos -->
+  <style>
+    .esconder { display: none; }
+  </style>
 </head>
 <body>
   <section class="section section1">
-    <h3>Vous avez été sélectionné pour une offre spéciale !</h3>
+    <h4>Vous avez été sélectionné pour une offre spéciale !</h4>
   </section>
 
   <section class="section section2">
@@ -127,25 +149,34 @@
   </section>
 
   <section class="section section3">
-    <div id="vid_67a82df90827d61730492a94" style="position: relative; width: 100%; padding: 133.33333333333331% 0 0;"> <img id="thumb_67a82df90827d61730492a94" src="https://images.converteai.net/7ee76c7b-b701-481f-b973-2b478faae041/players/67a82df90827d61730492a94/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> <div id="backdrop_67a82df90827d61730492a94" style=" -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%; "></div> </div> <script type="text/javascript" id="scr_67a82df90827d61730492a94"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/7ee76c7b-b701-481f-b973-2b478faae041/players/67a82df90827d61730492a94/player.js", s.async=!0,document.head.appendChild(s); </script>
+    <div id="vid_67c37a87c8f32f34895efd2d" style="position: relative; width: 100%; padding: 133.33333333333331% 0 0;"> <img id="thumb_67c37a87c8f32f34895efd2d" src="https://images.converteai.net/7ee76c7b-b701-481f-b973-2b478faae041/players/67c37a87c8f32f34895efd2d/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> <div id="backdrop_67c37a87c8f32f34895efd2d" style=" -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%; "></div> </div> <script type="text/javascript" id="scr_67c37a87c8f32f34895efd2d"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/7ee76c7b-b701-481f-b973-2b478faae041/players/67c37a87c8f32f34895efd2d/player.js", s.async=!0,document.head.appendChild(s); </script>
   </section>
 
-  <section class="section section4">
+  <!-- Sessões ocultas -->
+  <section class="section section4 esconder">
     <h2 id="timer">10:00</h2>
     <h2 class="choose-title">Choisissez votre option :</h2>
     <div class="potes-container">
       <div class="pote">
-        <img id="target-up1-12" src="images/up1-12.png" alt="up1-12">
-        <p class="pote-caption">Je ne veux pas</p>
+        <a href="https://vm-business.mycartpanda.com/ex-ocu/next-offer/7rVq6dnYDP-0j3Qo9OE7V?accepted=yes">
+          <img id="target-up1-12" src="images/up1-12.png" alt="up1-12">
+        </a>
+        <a href="https://vm-business.mycartpanda.com/ex-ocu/next-offer/7rVq6dnYDP-0j3Qo9OE7V?accepted=no">
+          <p class="pote-caption">Je ne veux pas</p>
+        </a>
       </div>
       <div class="pote">
-        <img src="images/up1-6.png" alt="up1-6">
-        <p class="pote-caption">Je ne veux pas</p>
+        <a href="https://vm-business.mycartpanda.com/ex-ocu/next-offer/7rVq6dnYDP-xjxXq7M6kj?accepted=yes">
+          <img src="images/up1-6.png" alt="up1-6">
+        </a>
+        <a href="https://vm-business.mycartpanda.com/ex-ocu/next-offer/7rVq6dnYDP-xjxXq7M6kj?accepted=no">
+          <p class="pote-caption">Je ne veux pas</p>
+        </a>
       </div>
     </div>
   </section>
 
-  <section class="section section5-6">
+  <section class="section section5-6 esconder">
     <div class="container">
       <img src="images/garantia.png" alt="Garantie">
       <div class="session6-text">
@@ -156,7 +187,7 @@
     </div>
   </section>
 
-  <section class="section section7">
+  <section class="section section7 esconder">
     <p class="limited-offer">Offre à durée limitée</p>
     <button class="pulsating-button" onclick="scrollToImage()">OUI ! Je veux Nerve Calm !</button>
   </section>
@@ -167,8 +198,9 @@
     </p>
   </section>
 
+  <!-- Script do timer e função scroll -->
   <script>
-    let timeLeft = 600;
+    let timeLeft = 900;
     const timerElement = document.getElementById("timer");
 
     const countdown = setInterval(() => {
@@ -189,6 +221,71 @@
         imageElement.scrollIntoView({ behavior: 'smooth' });
       }
     }
+  </script>
+
+  <!-- Código de delay para exibir as seções ocultas -->
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+      /* ALTERE O VALOR 10 PARA OS SEGUNDOS EM QUE AS SEÇÕES VÃO APARECER */
+      var SECONDS_TO_DISPLAY = 314;
+      var CLASS_TO_DISPLAY = ".esconder";
+      /* DAQUI PARA BAIXO NÃO PRECISA ALTERAR */
+      var EXPIRATION_DAYS = 14;
+      var alreadyDisplayedKey = "alreadyElsDisplayed" + SECONDS_TO_DISPLAY;
+      var elsHidden = document.querySelectorAll(CLASS_TO_DISPLAY);
+      var elsDisplayed = false;
+      var attempts = 0;
+
+      class StorageHandler {
+        static expiryTime = EXPIRATION_DAYS * 86400000;
+
+        static set(key, value) {
+          localStorage.setItem(
+            key,
+            JSON.stringify({ value, expiry: Date.now() + this.expiryTime })
+          );
+        }
+
+        static get(key) {
+          var item = localStorage.getItem(key);
+          if (!item) return null;
+
+          var { value, expiry } = JSON.parse(item);
+          if (Date.now() > expiry) {
+            localStorage.removeItem(key);
+            return null;
+          }
+          return value;
+        }
+      }
+
+      var alreadyElsDisplayed = StorageHandler.get(alreadyDisplayedKey);
+
+      var showHiddenElements = function () {
+        elsDisplayed = true;
+        elsHidden.forEach((e) => e.style.display = "block");
+        StorageHandler.set(alreadyDisplayedKey, true);
+      };
+
+      var startWatchVideoProgress = function () {
+        if (typeof smartplayer === 'undefined' || !(smartplayer.instances && smartplayer.instances.length)) {
+          if (attempts >= 10) return;
+          attempts++;
+          return setTimeout(startWatchVideoProgress, 1000);
+        }
+        smartplayer.instances[0].on('timeupdate', () => {
+          if (elsDisplayed || smartplayer.instances[0].smartAutoPlay) return;
+          if (smartplayer.instances[0].video.currentTime < SECONDS_TO_DISPLAY) return;
+          showHiddenElements();
+        });
+      };
+
+      if (alreadyElsDisplayed) {
+        setTimeout(showHiddenElements, 100);
+      } else {
+        startWatchVideoProgress();
+      }
+    });
   </script>
 </body>
 </html>
